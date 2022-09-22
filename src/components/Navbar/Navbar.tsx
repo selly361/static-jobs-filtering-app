@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../../assets/logos/bg-header-desktop.svg";
-import mobileImage from "../../assets/logos/bg-header-mobile.svg";
+import image from "../../assets/images/bg-header-desktop.svg";
+import mobileImage from "../../assets/images/bg-header-mobile.svg";
 
 const StyledHeader = styled.header`
   width: 100vw;

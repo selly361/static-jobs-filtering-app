@@ -11,5 +11,6 @@ export type jobType = {
     contract: string,
     location: string,
     languages: string[],
-    tools: string[]
+    tools: string[],
+    categories: string[]
 }

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "company": "Photosnap",
-    "logo": "./logos/photosnap.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/photosnap.svg",
     "new": true,
     "featured": true,
     "position": "Senior Frontend Developer",
@@ -12,12 +12,14 @@
     "contract": "Full Time",
     "location": "USA Only",
     "languages": ["HTML", "CSS", "JavaScript"],
-    "tools": []
+    "tools": [],
+    "categories": ["CSS", "JavaScript", "HTML", "Senior", "Frontend"]
+  
   },
   {
     "id": 2,
     "company": "Manage",
-    "logo": "./logos/manage.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/manage.svg",
     "new": true,
     "featured": true,
     "position": "Fullstack Developer",
@@ -27,12 +29,14 @@
     "contract": "Part Time",
     "location": "Remote",
     "languages": ["Python"],
-    "tools": ["React"]
+    "tools": ["React"],
+    "categories": ["Python", "Midweight", "React", "Fullstack"]
+  
   },
   {
     "id": 3,
     "company": "Account",
-    "logo": "./logos/account.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/account.svg",
     "new": true,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -42,12 +46,14 @@
     "contract": "Part Time",
     "location": "USA Only",
     "languages": ["JavaScript"],
-    "tools": ["React", "Sass"]
+    "tools": ["React", "Sass"],
+    "categories": ["React", "Sass", "JavaScript", "Junior", "Frontend"]
+  
   },
   {
     "id": 4,
     "company": "MyHome",
-    "logo": "./logos/myhome.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/myhome.svg",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -57,12 +63,13 @@
     "contract": "Contract",
     "location": "USA Only",
     "languages": ["CSS", "JavaScript"],
-    "tools": []
+    "tools": [],
+    "categories": ["CSS", "JavaScript", "Junior", "Frontend"]
   },
   {
     "id": 5,
     "company": "Loop Studios",
-    "logo": "./logos/loop-studios.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/loop-studios.svg",
     "new": false,
     "featured": false,
     "position": "Software Engineer",
@@ -72,12 +79,14 @@
     "contract": "Full Time",
     "location": "Worldwide",
     "languages": ["JavaScript"],
-    "tools": ["Ruby", "Sass"]
+    "tools": ["Ruby", "Sass"],
+    "categories": ["Sass", "JavaScript", "Ruby", "Midweight", "Fullstack"]
+  
   },
   {
     "id": 6,
     "company": "FaceIt",
-    "logo": "./logos/faceit.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/faceit.svg",
     "new": false,
     "featured": false,
     "position": "Junior Backend Developer",
@@ -87,12 +96,14 @@
     "contract": "Full Time",
     "location": "UK Only",
     "languages": ["Ruby"],
-    "tools": ["RoR"]
+    "tools": ["RoR"],
+    "categories": ["RoR", "Ruby", "Junior", "Backend"]
+  
   },
   {
     "id": 7,
     "company": "Shortly",
-    "logo": "./logos/shortly.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/shortly.svg",
     "new": false,
     "featured": false,
     "position": "Junior Developer",
@@ -102,12 +113,14 @@
     "contract": "Full Time",
     "location": "Worldwide",
     "languages": ["HTML", "JavaScript"],
-    "tools": ["Sass"]
+    "tools": ["Sass"],
+    "categories": ["Sass", "JavaScript", "Junior", "HTML", "Frontend"]
+  
   },
   {
     "id": 8,
     "company": "Insure",
-    "logo": "./logos/insure.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/insure.svg",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -117,12 +130,14 @@
     "contract": "Full Time",
     "location": "USA Only",
     "languages": ["JavaScript"],
-    "tools": ["Vue", "Sass"]
+    "tools": ["Vue", "Sass"],
+    "categories": ["Vue", "JavaScript", "Junior", "Sass", "Frontend"]
+  
   },
   {
     "id": 9,
     "company": "Eyecam Co.",
-    "logo": "./logos/eyecam-co.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/eyecam-co.svg",
     "new": false,
     "featured": false,
     "position": "Full Stack Engineer",
@@ -132,12 +147,14 @@
     "contract": "Full Time",
     "location": "Worldwide",
     "languages": ["JavaScript", "Python"],
-    "tools": ["Django"]
+    "tools": ["Django"],
+    "categories": ["Django", "JavaScript", "Midweight", "Python", "Fullstack"]
+  
   },
   {
     "id": 10,
     "company": "The Air Filter Company",
-    "logo": "./logos/the-air-filter-company.svg",
+    "logo": "https://johnpuckey.github.io/frontendmentor-static-job-listings/images/the-air-filter-company.svg",
     "new": false,
     "featured": false,
     "position": "Front-end Dev",
@@ -147,6 +164,8 @@
     "contract": "Part Time",
     "location": "Worldwide",
     "languages": ["JavaScript"],
-    "tools": ["React", "Sass"]
+    "tools": ["React", "Sass"],
+    "categories": ["React", "Sass", "Junior", "JavaScript", "Frontend"]
+  
   }
 ]

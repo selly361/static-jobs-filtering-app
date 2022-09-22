@@ -10,6 +10,8 @@ const Wrapper = styled.main`
   flex-flow: column;
   gap: 2rem;
   margin: auto;
+
+
 `;
 
 const JobList = () => {
