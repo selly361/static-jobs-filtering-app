@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { JobsContextProvider } from "../../../context/JobsProvider";
 import { ReactComponent as RemoveIcon } from "../../../assets/images/icon-remove.svg";
+import { motion } from 'framer-motion'
+
 
 interface PropTypes {
   children: React.ReactNode;
@@ -38,7 +40,7 @@ const RemoveTag = styled.h4`
 `;
 
 
-const RemoveContainer = styled.div`
+const RemoveContainer = styled(motion.div)`
   width: max-content;
   height: max-content;
   display: flex;
@@ -59,10 +61,10 @@ const IconContainer = styled.div`
 const FilterTag = ({ children, remove }: PropTypes) => {
   const { addCategory, removeCategory } = useContext(JobsContextProvider);
   return remove ? (
-    <RemoveContainer>
+    <RemoveContainer initial={{ opacity: 0 }} animate={{ opacity: 1}}>
       <RemoveTag>{children}</RemoveTag>
       <IconContainer onClick={() => removeCategory(children)} >
-      <RemoveIcon />
+        <RemoveIcon />
       </IconContainer>
     </RemoveContainer>
   ) : (

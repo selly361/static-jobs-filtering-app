@@ -4,7 +4,7 @@ import { NodeBuilderFlags } from 'typescript'
 import { jobType } from '../../../types/types'
 import FilterTags from '../FilterTags/FilterTags'
 import JobDetails from '../JobDetails/JobDetails'
-
+import { motion } from 'framer-motion'
 
 
 interface PropTypes {
@@ -16,7 +16,7 @@ interface CardProps {
   active: boolean
 }
 
-const Card = styled.div<CardProps>`
+const Card = styled(motion.div) <CardProps>`
   width: 100%;
   height: 150px;
   background-color: white;
@@ -28,6 +28,16 @@ const Card = styled.div<CardProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 760px){
+    height: 300px;
+    flex-flow: column;
+    height: max-content;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+  }
 `
 
 
@@ -42,8 +52,20 @@ const JobCard = ({ job }: PropTypes) => {
     location: job.location,
     contract: job.contract
   }
+
+  const animation = {
+    hidden: { opacity: 0 },
+    visible: { 
+        opacity: 1,
+        transition: {
+            duration: .5
+        }
+    }
+}
+
   return (
-    <Card active={job.featured ? true : false}>
+    <Card active={job.featured ? true : false} variants={animation}       initial="hidden"
+    animate="visible">
       <JobDetails {...jobDetailsProps} />
       <FilterTags categories={[job.role, job.level, ...job.tools, ...job.languages]} />
     </Card>

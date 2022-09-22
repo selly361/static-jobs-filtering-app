@@ -15,11 +15,25 @@ interface PropTypes {
 const Container = styled.div`
   display: flex;
   gap: 1rem;
+  padding-top: 1rem;
+
+
+  @media  (max-width: 760px){
+    width: 100%;
+  }
 `;
 
 const Logo = styled.img`
   height: 100px;
+  width: 100px;
   border-radius: 50%;
+
+  @media (max-width: 760px){
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -25px;
+  }
 `;
 
 const CompanyName = styled.h4`
@@ -61,6 +75,13 @@ const CompanyInfoWrapper = styled.div`
     align-items: center;
   }
 
+  @media (max-width: 760px){
+    gap: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #7b8e8e;
+    padding-bottom: 2rem;
+  }
+
 `
 
 const Dot = styled.div`
@@ -68,6 +89,11 @@ const Dot = styled.div`
   width: 3px;
   border-radius: 50%;
   background-color: #7b8e8e;
+`
+
+const Position = styled.h3`
+  font-weight: 500;
+
 `
 
 
@@ -91,7 +117,7 @@ const JobDetails = ({
           {featured && <FeaturedTag>Featured!</FeaturedTag>}
         </section>
         <section>
-          <h2>{position}</h2>
+          <Position>{position}</Position>
         </section>
         <section>
           <p>{postedAt}</p>

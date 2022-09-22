@@ -16,6 +16,11 @@ const Container = styled.div`
   width: 40%;
   padding: .2rem;
 
+  @media (max-width: 760px){
+    width: 100%;
+  justify-content: start;
+  }
+
 `
 
 
