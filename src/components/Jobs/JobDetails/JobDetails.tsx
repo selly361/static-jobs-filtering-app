@@ -63,13 +63,13 @@ const CompanyInfoWrapper = styled.div`
   flex-flow: column;
   justify-content: space-around;
 
-  section:first-child {
+  div:first-child {
     display: flex;
     gap: .9rem;
     align-items: center;
   }
 
-  section:last-child {
+  div:last-child {
     display: flex;
     gap: .3rem;
     align-items: center;
@@ -111,21 +111,21 @@ const JobDetails = ({
     <Container>
       <Logo src={logo} alt={`An image logo of ${company}`} />
       <CompanyInfoWrapper>
-        <section>
+        <div>
           <CompanyName>{company}</CompanyName>
           {jobsNew && <NewTag>New!</NewTag>}
           {featured && <FeaturedTag>Featured!</FeaturedTag>}
-        </section>
-        <section>
+        </div>
+        <div>
           <Position>{position}</Position>
-        </section>
-        <section>
+        </div>
+        <div>
           <p>{postedAt}</p>
           <Dot />
           <p>{contract}</p>
           <Dot />
           <p>{location}</p>
-        </section>
+        </div>
       </CompanyInfoWrapper>
     </Container>
   );
